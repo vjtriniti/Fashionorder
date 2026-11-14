@@ -1,14 +1,14 @@
 # FashionOrder
 
-A React + Vite storefront for Nigerian native wear, custom tailoring and boutique fashion.
+A fresh luxury-boutique front-end for a Nigerian clothing boutique and custom tailoring studio.
 
-## Features
-- Responsive storefront with Nigerian fashion collections
-- Category filters and product search
-- Interactive shopping bag with quantity controls
-- WhatsApp order handoff
-- Custom tailoring request form
-- Naira pricing and nationwide delivery messaging
+## Design
+- Luxury Boutique direction: white canvas, black typography and champagne-gold details.
+- Responsive storefront with editorial fashion imagery.
+- Boutique categories, product search and category filtering.
+- Interactive local shopping bag and checkout preview.
+- Custom tailoring brief form, customer area concept and separate admin preview.
+- Roadmap index covering all 17 requested website sections.
 
 ## Run locally
 ```bash
@@ -16,13 +16,8 @@ npm install
 npm run dev
 ```
 
-## Build
-```bash
-npm run build
-npm run preview
-```
+## Deploy
+The project is configured for Vercel with Vite. Connect this repository and deploy the `main` branch.
 
-## Deploy on Vercel
-Import this GitHub repository, choose the `fashionorder` branch, set **Root Directory** to `fashionorder`, and deploy with the Vite defaults. The included `vercel.json` specifies the build and output settings.
-
-The current ordering flow opens WhatsApp with the customer's order details. Connect the business WhatsApp number and payment/order backend before accepting live customer orders.
+## Important
+This repository currently contains a front-end demonstration. Cart state is local to the browser session. Tailoring/support forms display a preview confirmation only. The admin workspace uses sample content. Real accounts, database records, inventory, order fulfilment, email notifications and payment processing require a secure backend and provider integrations.
