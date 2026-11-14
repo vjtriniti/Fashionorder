@@ -1,3 +1,4 @@
+import Admin from './Admin.jsx'
 import { useMemo, useState } from 'react'
 
 const products = [
@@ -28,6 +29,8 @@ export default function App(){
   function change(id,delta){setCart(old=>old.map(x=>x.id===id?{...x,qty:x.qty+delta}:x).filter(x=>x.qty>0))}
   function order(){const lines=cart.map(x=>x.name+' x'+x.qty+' — '+money(x.price*x.qty)).join('%0A');const msg='Hello FashionOrder! I would like to place an order:%0A'+lines+'%0AEstimated total: '+money(total)+'%0APlease share payment and delivery details.';window.open('https://wa.me/?text='+encodeURIComponent(decodeURIComponent(msg)),'_blank')}
   function customOrder(e){e.preventDefault();const msg='Hello FashionOrder! I would like a custom outfit.%0AName: '+custom.name+'%0AStyle: '+custom.style+'%0AOccasion: '+custom.occasion+'%0ADetails: '+custom.notes;window.open('https://wa.me/?text='+encodeURIComponent(decodeURIComponent(msg)),'_blank');setCustomOpen(false)}
+  if (window.location.pathname.startsWith('/admin')) return <Admin />
+  if (window.location.pathname.startsWith('/account')) return <Admin account />
   return <div>
     <div className="announcement">Complimentary style consultation on custom orders <span>✦</span> Nationwide delivery across Nigeria</div>
     <header className="header"><a className="brand" href="#"><span className="brand-mark">F</span><span>fashion<span className="brand-light">order</span><small>WEAR YOUR STORY</small></span></a>
