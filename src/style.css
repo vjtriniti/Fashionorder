@@ -36,3 +36,7 @@
  .about-copy h2{font-size:43px}
  .about-values{gap:8px}
 }
+
+/* Homepage brand banner: show only the top hero row, not the lower image rows */
+.brand-hero-image{height:min(40vw,510px);object-fit:cover;object-position:top center}
+@media(max-width:650px){.brand-hero-image{height:40vw;max-height:none;object-position:top center}}
