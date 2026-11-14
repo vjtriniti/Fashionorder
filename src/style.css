@@ -40,3 +40,123 @@
 /* Homepage brand banner: show only the top hero row, not the lower image rows */
 .brand-hero-image{height:min(40vw,510px);object-fit:cover;object-position:top center}
 @media(max-width:650px){.brand-hero-image{height:40vw;max-height:none;object-position:top center}}
+
+
+/* OPTION 1 — LUXURY BOUTIQUE: consistent white, black and champagne-gold theme */
+:root{color:#171717;background:#fff}
+html,body,#root{background:#fff;color:#171717}
+.announcement{background:#171717;color:#fff}
+.announcement span{color:#c9a45e}
+.header{background:#fff;border-bottom:1px solid #eee}
+.brand{color:#171717}
+.brand-mark{border-color:#c9a45e;color:#171717}
+.brand-light{color:#b18a45}
+.brand small{color:#888}
+.nav{color:#4b4b4b}
+.nav a:hover,.footer-links a:hover{color:#b18a45}
+.head-actions button{color:#171717}
+.bag-button span{background:#171717;color:#fff}
+.brand-hero{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:6%;min-height:600px;padding:65px 7.2%;background:#fff;color:#171717}
+.brand-hero-image{position:relative;inset:auto;grid-column:2;grid-row:1;width:100%;height:min(42vw,510px);object-fit:cover;object-position:center;border-radius:2px}
+.brand-hero-shade{display:none}
+.brand-hero-copy{grid-column:1;grid-row:1;width:100%;max-width:590px;padding:0;color:#171717}
+.brand-hero h1{color:#171717}
+.brand-hero h1 em{color:#b18a45}
+.brand-hero-copy>p{color:#626262}
+.brand-hero .eyebrow{color:#a47d38}
+.brand-hero .hero-note{color:#777}
+.brand-hero .note-stars{color:#b18a45}
+.brand-hero-tag{right:5%;bottom:28px;background:#171717;color:#e6c77f;border-color:#c9a45e}
+.btn-gold{background:#c6a15b;color:#171717;border-radius:0}
+.btn-gold:hover{background:#dfbf7b}
+.light-link{color:#171717}
+.trust-strip{background:#fff;border-bottom:1px solid #eee}
+.trust-strip div{color:#444}
+.trust-strip b{color:#b18a45}
+.section{background:#fff}
+.section h2,.about-copy h2,.craft h2{color:#171717}
+.section h2 em,.about-copy h2 em,.craft h2 em{color:#b18a45}
+.filter.active,.filter:hover{background:#171717;border-color:#171717;color:#fff}
+.filter{border-color:#e5e1d8;color:#555}
+.search-box{border-color:#d7d1c5;color:#a47d38}
+.product-tag{background:#fff;color:#333;border:1px solid #eee}
+.quick-add{background:#171717;color:#fff}
+.product-title h3,.product-title>b{color:#171717}
+.product-meta{color:#9a7a43}
+.craft{background:#fff;border-top:1px solid #eee;border-bottom:1px solid #eee}
+.craft-copy>p,.section-top>p{color:#6e6e6e}
+.craft-points>div{border-color:#eee}
+.craft-points>div>b,.about-values b{color:#b18a45}
+.craft-points strong{color:#222}
+.craft-points small,.product-desc{color:#777}
+.btn-light{background:#c6a15b;color:#171717}
+.btn-light:hover{background:#dfbf7b}
+.category-card{background:#171717}
+.quote{background:#171717;color:#fff}
+.quote-mark,.quote p em{color:#d7b66f}
+.quote>span{color:#d5d5d5}
+.about-us{background:#fff}
+.about-copy>p{color:#666}
+.about-values{border-color:#e8e4dc}
+.about-values span{color:#555}
+.btn-dark{background:#171717;color:#fff}
+.btn-dark:hover{background:#3a3a3a}
+.custom-banner{background:#fff;color:#171717;border-top:1px solid #eee;border-bottom:1px solid #eee}
+.custom-banner .eyebrow,.custom-banner p{color:#555}
+.custom-banner .eyebrow i{background:#b18a45}
+.custom-banner h2{color:#171717}
+.custom-banner h2 em{color:#b18a45}
+.custom-banner .btn{background:#171717;color:#fff}
+footer{background:#171717;color:#eee}
+.footer-brand{color:#fff}
+.footer-brand .brand-light{color:#d7b66f}
+.footer-brand small,.footer-main>p,.footer-bottom{color:#bbb}
+.drawer,.custom-modal{background:#fff}
+.drawer-head h2,.cart-info>b{color:#171717}
+.qty{border-color:#ddd}
+.custom-modal input,.custom-modal select,.custom-modal textarea{border-color:#ddd}
+.toast{background:#171717;color:#fff}
+@media(max-width:650px){
+ .brand-hero{display:flex;flex-direction:column;align-items:stretch;gap:24px;min-height:0;padding:52px 7% 68px}
+ .brand-hero-copy{order:1;width:100%;padding:0}
+ .brand-hero-image{order:2;position:relative;inset:auto;width:100%;height:280px;max-height:none;object-position:center}
+ .brand-hero-shade{display:none}
+ .brand-hero h1{font-size:49px}
+ .brand-hero-copy>p{color:#626262}
+ .brand-hero .hero-actions{align-items:flex-start;flex-direction:column;gap:17px}
+ .brand-hero .hero-note{color:#777}
+ .brand-hero-tag{right:7%;bottom:18px}
+ .about-us{background:#fff}
+}
+
+/* Keep the admin and customer pages in the same luxury white-and-gold identity */
+.fo-admin{background:#fff!important;color:#171717!important}
+.fo-side{background:#fff!important;color:#171717!important;border-right:1px solid #eee!important}
+.fo-logo{color:#171717!important}
+.fo-logo span{color:#b18a45!important}
+.fo-side small,.fo-side-label{color:#888!important}
+.fo-nav{color:#555!important}
+.fo-nav.active,.fo-nav:hover{background:#f4efe5!important;color:#171717!important}
+.fo-side-bottom{border-color:#eee!important;color:#666!important}
+.fo-side-bottom a{color:#a47d38!important}
+.fo-top{background:#fff!important;border-color:#eee!important}
+.fo-top h1,.fo-welcome h2,.fo-panel h3{color:#171717!important}
+.fo-top p,.fo-welcome p,.fo-stat-label,.fo-stat-foot{color:#777!important}
+.fo-avatar{background:#eee5d3!important;color:#725526!important}
+.fo-btn{background:#171717!important;color:#fff!important}
+.fo-btn.gold{background:#c6a15b!important;color:#171717!important}
+.fo-btn.light{background:#fff!important;color:#171717!important;border-color:#ddd!important}
+.fo-card,.fo-panel{background:#fff!important;border-color:#eaeaea!important;border-radius:2px!important}
+.fo-stat-value{color:#171717!important}
+.fo-stat-icon{color:#b18a45!important}
+.fo-table th{color:#888!important;border-color:#eee!important}
+.fo-table td{color:#444!important;border-color:#eee!important}
+.fo-table td strong{color:#171717!important}
+.fo-status{background:#f5efe3!important;color:#8a6a32!important}
+.fo-status.green{background:#edf4ed!important;color:#47734b!important}
+.fo-status.grey{background:#f0f0f0!important;color:#666!important}
+.fo-search,.fo-field input,.fo-field select{background:#fff!important;border-color:#ddd!important;color:#171717!important}
+.fo-bar{background:#c6a15b!important}
+.fo-modal{background:#fff!important;border-radius:2px!important}
+.fo-mobile{color:#171717!important}
+@media(max-width:620px){.fo-side{box-shadow:8px 0 28px #0001!important}}
